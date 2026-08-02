@@ -1,7 +1,24 @@
 aid: tamad
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tamad.png
 name: Tamadé
-description: Tamadé is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Tamadé is a company surfaced as a portfolio company of 500 Global and added to the API
+  Evangelist network for enrichment. Its public surface at flowly.world is Flowly, a virtual telehealth
+  clinic offering an evidence-based program for chronic pain and anxiety recovery, delivered through
+  licensed therapists, a mobile relaxation-training app, and VR wellness tools. As of this enrichment
+  pass it publishes a consumer healthcare product with no public developer platform, API, SDKs, or
+  developer documentation. This profile records the honest no-API-surface result plus a live
+  domain-security probe of the flowly.world host.
 url: https://raw.githubusercontent.com/api-evangelist/tamad/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Telehealth
+- Digital Health
+- Chronic Pain
+- Mental Health
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +46,14 @@ maintainers:
 common:
 - type: Website
   url: https://flowly.world
+- type: Blog
+  url: https://flowly.world/blog
+- type: TermsOfService
+  url: https://flowly.world/terms-of-service
+- type: DomainSecurity
+  url: security/tamad-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
